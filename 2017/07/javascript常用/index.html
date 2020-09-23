@@ -1,0 +1,115 @@
+<!doctype html><html lang=zh><head><title>JavaScript常用 - 来世不可待，往世不可追</title><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"><meta name=renderer content="webkit"><meta http-equiv=cache-control content="no-transform"><meta http-equiv=cache-control content="no-siteapp"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="black"><meta name=format-detection content="telephone=no,email=no,adress=no"><meta name=theme-color content="#000000"><meta http-equiv=window-target content="_top"><meta name=description content="JavaScript 常用"><meta name=generator content="Hugo 0.75.1 with theme pure"><title>JavaScript常用 - 来世不可待，往世不可追</title><link rel=stylesheet href=https://wslzl.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css><link rel=stylesheet href=https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css async><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css async><meta property="og:title" content="JavaScript常用"><meta property="og:description" content="JavaScript 常用"><meta property="og:type" content="article"><meta property="og:url" content="https://wslzl.github.io/2017/07/javascript%E5%B8%B8%E7%94%A8/"><meta property="article:published_time" content="2017-07-09T00:00:00+00:00"><meta property="article:modified_time" content="2017-07-09T00:00:00+00:00"><meta itemprop=name content="JavaScript常用"><meta itemprop=description content="JavaScript 常用"><meta itemprop=datePublished content="2017-07-09T00:00:00+00:00"><meta itemprop=dateModified content="2017-07-09T00:00:00+00:00"><meta itemprop=wordCount content="482"><meta itemprop=keywords content="JavaScript,"><meta name=twitter:card content="summary"><meta name=twitter:title content="JavaScript常用"><meta name=twitter:description content="JavaScript 常用"><!--[if lte IE 9]><script src=https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js></script><![endif]--><!--[if lt IE 9]><script src=https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js></script><script src=https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js></script><![endif]--></head><body class="main-center theme-black" itemscope itemtype=http://schema.org/WebPage><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=slimContent><div class=navbar-header><div class="profile-block text-center"><a id=avatar href=https://github.com/wslzl target=_blank><img class="img-circle img-rotate" src=https://wslzl.github.io/avatar.jpg width=200 height=200></a><h2 id=name class="hidden-xs hidden-sm">冬眠的鱼</h2><h3 id=title class="hidden-xs hidden-sm hidden-md">author title</h3><small id=location class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Shenzhen, China</small></div><div class=search id=search-form-wrap><form class="search-form sidebar-form"><div class=input-group><input type=text class="search-form-input form-control" placeholder=搜索>
+<span class=input-group-btn><button type=submit class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button></span></div><div class=ins-search><div class=ins-search-mask></div><div class=ins-search-container><div class=ins-input-wrapper><input type=text class=ins-search-input placeholder=想要查找什么... x-webkit-speech>
+<button type=button class="close ins-close ins-selectable" data-dismiss=modal aria-label=Close><span aria-hidden=true>×</span></button></div><div class=ins-section-wrapper><div class=ins-section-container></div></div></div></div></form></div><button class="navbar-toggle collapsed" type=button data-toggle=collapse data-target=#main-navbar aria-controls=main-navbar aria-expanded=false>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button></div><nav id=main-navbar class="collapse navbar-collapse" itemscope itemtype=http://schema.org/SiteNavigationElement role=navigation><ul class="nav navbar-nav main-nav"><li class="menu-item menu-item-home"><a href=/><i class="icon icon-home-fill"></i><span class=menu-title>Home</span></a></li><li class="menu-item menu-item-archives"><a href=/posts/><i class="icon icon-archives-fill"></i><span class=menu-title>Archives</span></a></li><li class="menu-item menu-item-categories"><a href=/categories/><i class="icon icon-folder"></i><span class=menu-title>Categories</span></a></li><li class="menu-item menu-item-tags"><a href=/tags/><i class="icon icon-tags"></i><span class=menu-title>Tags</span></a></li><li class="menu-item menu-item-about"><a href=/about/><i class="icon icon-cup-fill"></i><span class=menu-title>About</span></a></li></ul></nav></div></header><aside class=sidebar itemscope itemtype=http://schema.org/WPSideBar><div class=slimContent><div class=widget><h3 class=widget-title>公告</h3><div class=widget-body><div id=board><div class=content><p>enjoy~</p></div></div></div></div><div class=widget><h3 class=widget-title>分类</h3><div class=widget-body><ul class=category-list><li class=category-list-item><a href=https://wslzl.github.io/categories/%E5%89%8D%E7%AB%AF/ class=category-list-link>前端</a><span class=category-list-count>12</span></li><li class=category-list-item><a href=https://wslzl.github.io/categories/%E6%8A%80%E6%9C%AF/ class=category-list-link>技术</a><span class=category-list-count>1</span></li><li class=category-list-item><a href=https://wslzl.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/ class=category-list-link>数据结构与算法</a><span class=category-list-count>1</span></li><li class=category-list-item><a href=https://wslzl.github.io/categories/%E6%97%A5%E8%AF%AD/ class=category-list-link>日语</a><span class=category-list-count>6</span></li><li class=category-list-item><a href=https://wslzl.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ class=category-list-link>编程语言</a><span class=category-list-count>1</span></li></ul></div></div><div class=widget><h3 class=widget-title>标签</h3><div class=widget-body><ul class=tag-list><li class=tag-list-item><a href=https://wslzl.github.io/tags/css/ class=tag-list-link>css</a><span class=tag-list-count>3</span></li><li class=tag-list-item><a href=https://wslzl.github.io/tags/javascript/ class=tag-list-link>javascript</a><span class=tag-list-count>2</span></li><li class=tag-list-item><a href=https://wslzl.github.io/tags/vue/ class=tag-list-link>vue</a><span class=tag-list-count>2</span></li><li class=tag-list-item><a href=https://wslzl.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/ class=tag-list-link>开发工具</a><span class=tag-list-count>1</span></li><li class=tag-list-item><a href=https://wslzl.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/ class=tag-list-link>开发环境</a><span class=tag-list-count>3</span></li><li class=tag-list-item><a href=https://wslzl.github.io/tags/%E6%AD%8C%E8%AF%8D/ class=tag-list-link>歌词</a><span class=tag-list-count>6</span></li></ul></div></div><div class=widget><h3 class=widget-title>最新文章</h3><div class=widget-body><ul class="recent-post-list list-unstyled no-thumbnail"><li><div class=item-inner><p class=item-title><a href=https://wslzl.github.io/2020/07/%E6%B7%B7%E5%90%88%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8E%92%E5%BA%8F/ class=title>混合字符串排序</a></p><p class=item-date><time datetime="2020-07-22 00:00:00 +0000 UTC" itemprop=datePublished>2020-07-22</time></p></div></li><li><div class=item-inner><p class=item-title><a href=https://wslzl.github.io/2020/02/%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB/ class=title>打上花火</a></p><p class=item-date><time datetime="2020-02-11 00:00:00 +0000 UTC" itemprop=datePublished>2020-02-11</time></p></div></li><li><div class=item-inner><p class=item-title><a href=https://wslzl.github.io/2019/09/my-all/ class=title>My All</a></p><p class=item-date><time datetime="2019-09-25 00:00:00 +0000 UTC" itemprop=datePublished>2019-09-25</time></p></div></li><li><div class=item-inner><p class=item-title><a href=https://wslzl.github.io/2019/06/vue%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD/ class=title>Vue实现拖拽</a></p><p class=item-date><time datetime="2019-06-06 00:00:00 +0000 UTC" itemprop=datePublished>2019-06-06</time></p></div></li><li><div class=item-inner><p class=item-title><a href=https://wslzl.github.io/2019/04/vscode%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/ class=title>VS Code使用心得</a></p><p class=item-date><time datetime="2019-04-16 00:00:00 +0000 UTC" itemprop=datePublished>2019-04-16</time></p></div></li></ul></div></div></div></aside><aside class="sidebar sidebar-toc collapse" id=collapseToc itemscope itemtype=http://schema.org/WPSideBar><div class=slimContent><h4 class=toc-title>文章目录</h4><nav id=toc class="js-toc toc"></nav></div></aside><main class=main role=main><div class=content><article id=- class="article article-type-" itemscope itemtype=http://schema.org/BlogPosting><div class=article-header><h1 itemprop=name><a class=article-title href=/2017/07/javascript%E5%B8%B8%E7%94%A8/>JavaScript常用</a></h1><div class=article-meta><span class=article-date><i class="icon icon-calendar-check"></i>&nbsp;
+<a href=https://wslzl.github.io/2017/07/javascript%E5%B8%B8%E7%94%A8/ class=article-date><time datetime="2017-07-09 00:00:00 +0000 UTC" itemprop=datePublished>2017-07-09</time></a></span>
+<span class=article-category><i class="icon icon-folder"></i>&nbsp;
+<a class=article-category-link href=/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/>编程语言</a></span>
+<span class=article-tag><i class="icon icon-tags"></i>&nbsp;
+<a class=article-tag-link href=/tags/javascript/>JavaScript</a></span>
+<span class="article-read hidden-xs"><i class="icon icon-eye-fill" aria-hidden=true></i><span id=https://wslzl.github.io/2017/07/javascript%E5%B8%B8%E7%94%A8/ class=leancloud_visitors data-flag-title=JavaScript常用><span class=leancloud-visitors-count>0</span></span></span>
+<span class=post-comment><i class="icon icon-comment"></i>&nbsp;<a href=/2017/07/javascript%E5%B8%B8%E7%94%A8/#comments class=article-comment-link>评论</a></span>
+<span class="post-wordcount hidden-xs" itemprop=wordCount>字数统计: 482字</span>
+<span class="post-readcount hidden-xs" itemprop=timeRequired>阅读时长: 1分</span></div></div><div class="article-entry marked-body js-toc-content" itemprop=articleBody><p>JavaScript 常用</p><h2 id=类型>类型</h2><h3 id=判断类型>判断类型</h3><pre><code class=language-JavaScript>const isType = type =&gt; target =&gt; `[object ${type}]` === Object.prototype.toString.call(target);
+</code></pre><h3 id=string-强制类型转换>string 强制类型转换</h3><pre><code class=language-JavaScript>'123' * 1
++ '123'
+</code></pre><h3 id=位运算>位运算</h3><pre><code class=language-JavaScript>!! // Bool
+
+~~num // Math.floor
+
+num | 0 // 取整
+
+num &amp; 1 // 判断奇偶
+</code></pre><h2 id=数组>数组</h2><h3 id=置空>置空</h3><pre><code class=language-JavaScript>array.length = 0;
+</code></pre><h3 id=填充>填充</h3><pre><code class=language-JavaScript>let initializeArray = (n, value=0) =&gt; Array(n).fill(value);
+</code></pre><h3 id=克隆>克隆</h3><pre><code class=language-JavaScript>const _arr = [];
+const arr = [..._arr];
+</code></pre><h3 id=交换>交换</h3><pre><code class=language-JavaScript>let x = 3;
+let y = 4;
+[x, y] = [y, x];
+</code></pre><h3 id=合并>合并</h3><pre><code class=language-JavaScript>const arr1 = [];
+const arr2 = [];
+const arr = [...arr1, ...arr2];
+</code></pre><h3 id=去重>去重</h3><pre><code class=language-JavaScript>const unique = array =&gt; Array.from(new Set(array));
+const unique = array =&gt; [...new Set(array)];
+</code></pre><h3 id=计数>计数</h3><pre><code class=language-JavaScript>const count = (array, value) =&gt; array.reduce((a, v) =&gt; v === value ? a+1 : a+0, 0);
+</code></pre><h3 id=最值>最值</h3><pre><code class=language-JavaScript>const arrayMax = array =&gt; Math.max(...array);
+const arrayMin = array =&gt; Math.min(...array);
+</code></pre><h3 id=相似>相似</h3><pre><code class=language-JavaScript>const similarity = (array, values) =&gt; array.filter(v =&gt; values.includes(v));
+</code></pre><h3 id=求和>求和</h3><pre><code class=language-JavaScript>const total = array =&gt; array.reduce((prev, cur) =&gt; {return prev + cur});
+</code></pre><h3 id=平均>平均</h3><pre><code class=language-JavaScript>const average = array =&gt; array.reduce((prev, cur) =&gt;  prev + cur, 0) / array.length;
+</code></pre><h3 id=排序>排序</h3><pre><code class=language-JavaScript>const cnSort = array =&gt; array.sort((a,b) =&gt; a.localeCompare(b, 'zh-Hans-CN'), {sensitivity: 'accent'});
+</code></pre><h2 id=对象>对象</h2><h3 id=克隆-1>克隆</h3><pre><code class=language-JavaScript>const _obj = {};
+const obj1 = {..._obj};
+const obj2 = JSON.parse(JSON.stringify(_obj));
+</code></pre><h3 id=合并-1>合并</h3><pre><code class=language-JavaScript>const obj1 = {};
+const obj2 = {};
+const obj = {...obj1, ...obj2};
+</code></pre><h3 id=时间戳>时间戳</h3><pre><code class=language-JavaScript>const timestamp = +new Date(&quot;2020-02-02&quot;);
+</code></pre><h2 id=函数>函数</h2><h3 id=自执行>自执行</h3><pre><code class=language-JavaScript>const Func = function() {}();
+
+(function() {})();
+(function() {}());
+[function() {}()];
+
++ function() {}();
+- function() {}();
+~ function() {}();
+! function() {}();
+
+new function() {};
+new function() {}();
+void function() {}();
+typeof function() {}();
+delete function() {}();
+
+1, function() {}();
+1 ^ function() {}();
+1 &gt; function() {}();
+</code></pre><pre><code class=language-JavaScript>
+</code></pre><ul><li><p>Math.min() > Math.max
+Math.min() 不传参数返回 Infinity
+Math.max() 不传参数返回 -Infinity</p></li><li><p>es7 includes
+includes 可以判断 NaN，indexOf 不可以</p></li><li><p>数据类型强制转换</p></li></ul><pre><code class=language-JAvaScript>const str = '369';
+// 加减运算符
++str
+-str
+
+// 快速获取布尔值
+!!str
+</code></pre><ul><li>有条件的对象</li></ul><pre><code class=language-JAvaScript>function(isTrue) {
+    return {
+        id: 0,
+        name: 'js',
+        ...isTrue &amp;&amp; {others: 'others'}
+    }
+}
+</code></pre><ul><li>提取属性</li></ul><pre><code class=language-JAvaScript>const obj = {x: 1, y: 2, z: 3}
+const {x, ...others} = obj;
+</code></pre><ul><li>解构赋默认值</li></ul><pre><code class=language-JAvaScript>const obj = {x: 1, y: 2, z: 3}
+const {x = 4, w = 5} = obj
+</code></pre><ul><li>获取时间戳</li></ul><pre><code class=language-JAvaScript>const t = new Date()
+// 1 默认末尾三位数为0
+Date.parse(t)
+// 2
+t.getTime()
+// 3
+a.valueOf()
+// 4
++a
+</code></pre><ul><li>中文排序</li></ul><pre><code class=language-JAvaScript>array.sort((a, b) =&gt; {
+    a.localCompare(b, 'zh-Hans-CN', {sensitivity: 'accent'})
+})
+</code></pre></div><div class=article-footer><blockquote class=mt-2x><ul class="post-copyright list-unstyled"><li class="post-copyright-link hidden-xs"><strong>本文链接:</strong>
+<a href=https://wslzl.github.io/2017/07/javascript%E5%B8%B8%E7%94%A8/ title=JavaScript常用 target=_blank rel=external>https://wslzl.github.io/2017/07/javascript%E5%B8%B8%E7%94%A8/</a></li><li class=post-copyright-license><strong>License：</strong><a href=http://creativecommons.org/licenses/by/4.0/deed.zh target=_blank rel=external>CC BY 4.0 CN</a></li></ul></blockquote><div class="panel panel-default panel-badger"><div class=panel-body><figure class=media><div class=media-left><a href=https://github.com/wslzl target=_blank class="img-burn thumb-sm visible-lg"><img src=https://wslzl.github.io/avatar.jpg class="img-rounded w-full" alt></a></div><div class=media-body><h3 class=media-heading><a href=https://github.com/wslzl target=_blank><span class=text-dark>冬眠的鱼</span><small class=ml-1x>author title</small></a></h3><div>只要步履不停，一切总会实现！</div></div></figure></div></div></div></article><section id=comments><div id=vcomments></div></section></div><nav class="bar bar-footer clearfix" data-stick-bottom><div class=bar-inner><ul class="pager pull-left"><li class=prev><a href=https://wslzl.github.io/2017/07/css%E5%A1%AB%E5%9D%91/ title=CSS填坑><i class="icon icon-angle-left" aria-hidden=true></i><span>&nbsp;&nbsp;下一篇</span></a></li><li class=next><a href=https://wslzl.github.io/2017/07/javascript%E5%A1%AB%E5%9D%91/ title=JavaScript填坑><span>上一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden=true></i></a></li><li class=toggle-toc><a class="toggle-btn collapsed" data-toggle=collapse href=#collapseToc aria-expanded=false title=文章目录 role=button><span>[&nbsp;</span><span>文章目录</span>
+<i class="text-collapsed icon icon-anchor"></i><i class="text-in icon icon-close"></i><span>]</span></a></li></ul><div class=bar-right><div class=share-component data-sites=weibo,qq,wechat,facebook,twitter data-mobile-sites=weibo,qq,qzone></div></div></div></nav></main><footer class=footer itemscope itemtype=http://schema.org/WPFooter><ul class=social-links><li><a href=https://github.com/wslzl target=_blank title=github data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li><li><a href=https://wslzl.github.io/index.xml target=_blank title=rss data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li></ul><div class=copyright>&copy;2017 -
+2020<div class=publishby>Theme by <a href=https://github.com/xiaoheiAh target=_blank>xiaoheiAh </a>base on<a href=https://github.com/xiaoheiAh/hugo-theme-pure target=_blank> pure</a>.</div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script><script type=text/x-mathjax-config>
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script><script src=https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js></script><script>window.jQuery||document.write('<script src="js/jquery.min.js"><\/script>')</script><script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js></script><script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js defer></script><script type=text/javascript src=https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js defer></script><script>hljs.configure({tabReplace:'    ',classPrefix:''})
+hljs.initHighlightingOnLoad();</script><script src=https://wslzl.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js></script><script src=https://wslzl.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js></script><script>(function(window){var INSIGHT_CONFIG={TRANSLATION:{POSTS:'文章',PAGES:'页面',CATEGORIES:'分类',TAGS:'标签',UNTITLED:'(未命名)',},ROOT_URL:'https:\/\/wslzl.github.io',CONTENT_URL:'https:\/\/wslzl.github.io\/searchindex.json ',};window.INSIGHT_CONFIG=INSIGHT_CONFIG;})(window);</script><script type=text/javascript src=https://wslzl.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js defer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js></script><script>tocbot.init({tocSelector:'.js-toc',contentSelector:'.js-toc-content',headingSelector:'h1, h2, h3',hasInnerContainers:true,});</script><script src=https://cdn1.lncld.net/static/js/3.0.4/av-min.js></script><script src=https://cdn.jsdelivr.net/npm/valine></script><script type=text/javascript>var GUEST=['nick','mail','link'];var meta='nick,mail';meta=meta.split(',').filter(function(item){return GUEST.indexOf(item)>-1;});new Valine({el:'#vcomments',verify:null,notify:null,appId:'i89JNuCRNwzqLORtfcXjPoa3-MdYXbMMI',appKey:'CDd11qOALnXYboV5g00aEreN',placeholder:'enjoy~',avatar:'mm',meta:meta,pageSize:'10'||10,visitor:true});</script></body></html>
